@@ -8,18 +8,18 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
-const rootDir = require('./util/path')
-
-const usersRoutes = require('./routes/users');
+const usersData = require('./routes/users');
 const coRoutes = require('./routes/company');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use(usersRoutes);
+  
+app.use(usersData.routes);
 app.use(coRoutes);
 
-app.use((req, res, next) => res.status(404).render('404', { pageTitle: '404 - Page Not Found!', path: '/', }));
+app.use((req, res, next) => {
+	res.status(404).render('404', {pageTitle: '404 - Page Not Found!', path: '/'});
+});
 
 const protocol = `http`;
 const server = `127.0.0.1`
