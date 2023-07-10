@@ -6,6 +6,11 @@ const rootDir = require('../util/path');
 
 const router = express.Router();
 
-router.get('/', (req, res, next) => res.sendFile(path.join(rootDir, 'views', 'company.html')));
+router.get('/', (req, res, next) => {
+	res.render('company', {
+		pageTitle: 'Our Company',
+		path: '/',
+	});
+});
 
 module.exports = router;

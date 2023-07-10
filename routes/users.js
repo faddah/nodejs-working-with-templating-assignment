@@ -8,7 +8,10 @@ const router = express.Router();
 
 // /admin/add-product => GET
 router.get('/users', (req, res, next) => {
-	res.sendFile(path.join(rootDir, 'views', 'users.html'));
+	res.render('users', {
+		pageTitle: 'Our Users',
+		path: '/users',
+	});
 });
 
-module.exports = router;
+exports.routes = router;
