@@ -2,7 +2,7 @@
 
 ## Section 6 — Working With Dynamic Content & Templating Engines
 
-## - Assignment: Fourth Exericse
+## Assignment: Fourth Exericse
 
 My Solutions for the Fourth Coding Exercise Assignment in Section 6 of **[Node.JS — The Complete Guide by Maximillian Schwazrzmüller](https://www.udemy.com/course/nodejs-the-complete-guide/)**.
 
