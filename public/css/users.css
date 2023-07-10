@@ -1,0 +1,26 @@
+.users__list {
+	background-color: cornsilk;
+	color: blue;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+}
+
+.users__list:before {
+	border: 1px solid darkblue;
+	border-bottom: 0;
+	border-right: 1;
+	display: block;
+	font-weight: bold;
+	padding: 0.25rem;
+	text-align: center;
+	content: 'Our Users';
+}
+
+.users__list li {
+	border: 1px solid darkblue;
+	margin-bottom: -1px;
+	padding: 0.25rem;
+	text-align: left;
+}
