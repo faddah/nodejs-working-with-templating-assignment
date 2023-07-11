@@ -6,7 +6,14 @@
 				<li>Nick Fury</li>
 				<li>Maria Hill</li>
 				<li>Sam Wilson</li>
-				<li>...</li>
+				<% if (hasUsers) { %>
+					<% users.forEach((user)=> { %>
+						<li>
+							<% user.name %>
+						</li>
+						<% }); %>
+							<li>...</li>
+							<% } %>
 			</ul>
 		</main>
 		<%- include('includes/end.ejs') %>
