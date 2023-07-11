@@ -10,14 +10,8 @@ const users = [];
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
-// const usersData = require('./routes/users');
-// const coRoutes = require('./routes/company');
-
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
-  
-// app.use(usersData.routes);
-// app.use(coRoutes);
 
 app.get('/', (req, res, next) => {
 	res.render('company', {
