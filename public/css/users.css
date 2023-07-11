@@ -22,6 +22,6 @@
 .users__list li {
 	border: 1px solid darkblue;
 	margin-bottom: -1px;
-	padding: 0.25rem;
+	padding: 0.5rem;
 	text-align: left;
 }
